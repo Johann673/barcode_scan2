@@ -33,6 +33,10 @@ android {
     namespace = "de.mintware.barcode_scan"
     compileSdkVersion 31
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
         main.proto.srcDirs += '../protos'
